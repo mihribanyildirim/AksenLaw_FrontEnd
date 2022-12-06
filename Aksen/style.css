@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Hero-image */
+.hero-image {
+    background-image: linear-gradient(#020a20af, #020a20bb), url(img/hero.jpg);
+    height: 35%;
+    background-position: top;
+    background-size: 143%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.hero-text {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    transition: 0.7s;
+}
+.navbar-brand img {
+    width: 236px;
+}
+.nav-item {
+    margin-inline: 10px;
+}
+.liste {
+    padding: 0;
+}
+.liste .secilen {
+    color: #990033;
+}
+.liste li {
+    list-style-type: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #a1a1a1;
+    margin-bottom: 10px;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+.cizgi {
+    width: 70%;
+    margin-top: 30px;
+    border: 1px solid rgb(0, 0, 0);
+}
+.col-md-4, .col-lg-4 {
+    transition: 0.5s;
+}
+.card {
+    border: none;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.card img {
+    width: 100%;
+    height: 232px;
+}
+.card h5 {
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 2px;
+
+}
+.card p {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+/* Responsive */
+@media screen and (max-width: 1200px) {
+    .nav-item {
+        margin-inline: 5px;
+        font-size: 14px;
+    }
+    .navbar-brand img {
+        width: 196px;
+    }
+}
+@media screen and (max-width: 992px) {
+    .navbar-brand img {
+        width: 236px;
+    }
+    .navbar-nav {
+        background-image: linear-gradient(#020a20a2, #020a2079);
+        color: black !important;
+        z-index: 1;
+    }
+    .card {
+        z-index: -1;
+    }
+}
+@media screen and (max-width: 768px) {
+    .hero-image {
+        background-size: 150%;
+    }
+    .hero-text {
+        top: 50%;
+    }
+    .liste {
+        text-align: center;
+    }
+    .cizgi {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .card img {
+        height: 360px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .hero-image {
+        background-size: 220%;
+        height: 40%;
+    }
+    .navbar-brand img {
+        width: 170px;
+    }
+    .hero-text {
+        font-size: 18px;
+        letter-spacing: 2px;
+    }
+    .navbar-toggler {
+        width: 40px;
+        height: 30px;
+        font-size: 15px;
+        display: flex;
+        justify-content: center;
+    }
+}
